@@ -1,0 +1,45 @@
+{
+  "gate": "fail",
+  "license": {
+    "declared": "Apache-2.0",
+    "detected": [
+      "ISC"
+    ],
+    "license_files": [
+      "//tmp/tmp.Qb8xnpMNsS/x/nvim-linux-arm64/share/nvim/runtime/pack/dist/opt/netrw/LICENSE.txt"
+    ],
+    "matches": false,
+    "status": "fail",
+    "detail": "declared Apache-2.0 but detected ISC"
+  },
+  "asset": {
+    "format": "tar.gz",
+    "size": 11353219,
+    "valid": true,
+    "is_html": false,
+    "binary": "nvim",
+    "elf_arch": "ARM aarch64",
+    "status": "pass",
+    "detail": "valid tar.gz archive containing 8 ELF executable(s); first: nvim (ARM aarch64); release covers: amd64 arm64 "
+  },
+  "architectures": {
+    "covered": [
+      "amd64",
+      "arm64"
+    ],
+    "missing": [
+      "armel",
+      "armhf",
+      "i386",
+      "ppc64el",
+      "s390x",
+      "riscv64",
+      "loong64"
+    ],
+    "assets": {
+      "amd64": "nvim-linux-x86_64.tar.gz",
+      "arm64": "nvim-linux-arm64.tar.gz"
+    }
+  },
+  "vetted_at": "2026-08-19T17:59:08Z"
+}

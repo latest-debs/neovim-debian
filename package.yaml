@@ -1,0 +1,9 @@
+# Package definition for neovim
+
+package_name: neovim
+github_repo: neovim/neovim
+artifact_format: tar.gz
+description: "A heavily refactored vim fork focused on extensibility and usability, with a built-in Lua scripting engine and LSP support."
+license: Apache-2.0
+
+# Build for all Debian suites and all supported architectures.

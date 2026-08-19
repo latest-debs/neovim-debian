@@ -1,0 +1,27 @@
+{
+  "package": "neovim",
+  "upstream_repo": "neovim/neovim",
+  "version": "v0.12.4",
+  "tag": "v0.12.4",
+  "published_at": "2026-07-05T13:41:40Z",
+  "license": "NOASSERTION",
+  "asset": "nvim-linux-arm64.tar.gz",
+  "asset_size": 11353219,
+  "sha256": "ceb7e88c6b681f0515d135dcdfad54f5eb4373b25ce6172197cd9a69c758063f",
+  "expected_sha256": "",
+  "checksum_source": "",
+  "checksum_verified": false,
+  "assets": {
+    "nvim-linux-arm64.tar.gz": {
+      "sha256": "ceb7e88c6b681f0515d135dcdfad54f5eb4373b25ce6172197cd9a69c758063f",
+      "size": 11353219
+    },
+    "nvim-linux-x86_64.tar.gz": {
+      "sha256": "012bf3fcac5ade43914df3f174668bf64d05e049a4f032a388c027b1ebd78628",
+      "size": 11404178
+    }
+  },
+  "asset_count": 2,
+  "vetted_at": "2026-08-19T17:58:50Z",
+  "vetted_by": ""
+}
