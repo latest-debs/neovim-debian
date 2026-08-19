@@ -6,4 +6,21 @@ artifact_format: tar.gz
 description: "A heavily refactored vim fork focused on extensibility and usability, with a built-in Lua scripting engine and LSP support."
 license: Apache-2.0
 
+# neovim ships a full install tree (bin/lib/share) rather than a
+# standalone binary - bin/nvim needs share/nvim/runtime/ (colorschemes,
+# syntax files, etc.) and lib/nvim/parser/*.so (tree-sitter parsers)
+# alongside it. bundle installs the whole binary_path tree under
+# /usr/lib/neovim/ and symlinks bin/nvim into /usr/bin (requires
+# debian-multiarch-builder v.0.1a21+, which fixed a Docker glob-COPY
+# collision specific to this release: bin/nvim (a file) and lib/nvim/
+# (a directory) share a name one level down, which the previous
+# non-bundle COPY path failed on outright).
+#
+# No binary_path needed: the release archive's own top-level directory
+# name (nvim-linux-<arch>) already matches the archive's stem exactly,
+# so the builder extracts it in place rather than nesting it inside
+# another wrapper directory - bin/, lib/, and share/ already sit
+# directly at the extraction root.
+bundle: true
+
 # Build for all Debian suites and all supported architectures.
